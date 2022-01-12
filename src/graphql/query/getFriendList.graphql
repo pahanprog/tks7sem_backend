@@ -1,0 +1,14 @@
+query GetFriendList {
+  getFriendList {
+    recipient {
+      id
+      username
+      profilePicture
+    }
+    sender {
+      id
+      username
+      profilePicture
+    }
+  }
+}

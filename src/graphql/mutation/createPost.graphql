@@ -1,0 +1,23 @@
+mutation CreatePost($title: String!, $body: String!, $picture: String) {
+  createPost(input: { title: $title, body: $body, picture: $picture }) {
+    errors {
+      field
+      message
+    }
+    post {
+      id
+      createdAt
+      title
+      body
+      picture
+      isEdited
+      likeCount
+      creator {
+        id
+        username
+        profilePicture
+      }
+      isLiked
+    }
+  }
+}

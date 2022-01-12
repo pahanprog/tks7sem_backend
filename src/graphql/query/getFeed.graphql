@@ -1,0 +1,18 @@
+query GetFeed {
+  getFeed {
+    id
+    createdAt
+    updatedAt
+    title
+    body
+    picture
+    isEdited
+    likeCount
+    isLiked
+    creator {
+      id
+      username
+      profilePicture
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.input_container {
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.svg {
+  margin-right: 10px;
+}
+
+.input {
+  padding: 2.5px;
+  border: none;
+  border-radius: 6px;
+  height: 20px;
+  background-color: transparent;
+}
+
+input:focus {
+  outline: none;
+}
+
+.error_container {
+  width: 100%;
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  font-size: 14px;
+  color: red;
+}

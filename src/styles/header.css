@@ -1,0 +1,55 @@
+.app_header {
+  background-color: white;
+  padding: 5px 20px;
+  box-shadow: 0px 1px 4px 0px rgba(34, 60, 80, 0.2);
+}
+
+.app_header_inner {
+  display: flex;
+  flex-direction: row;
+}
+
+.back_btn {
+  flex: 1;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.profile_container {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.logo {
+  flex: 2;
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 25px;
+}
+
+.logout_btn {
+  padding: 3px 10px;
+  background-color: cyan;
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.current_user_info {
+  height: 100%;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pfp {
+  margin-right: 5px;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}

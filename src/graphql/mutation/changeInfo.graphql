@@ -1,0 +1,7 @@
+mutation ChangeInfo($email: String!, $username: String!) {
+  changeInfo(email: $email, username: $username) {
+    id
+    username
+    email
+  }
+}

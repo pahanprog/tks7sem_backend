@@ -1,0 +1,3 @@
+mutation SendFriendResponse($id: Int!) {
+  sendFriendResponse(id: $id)
+}

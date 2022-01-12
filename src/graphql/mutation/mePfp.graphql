@@ -1,0 +1,3 @@
+mutation ChangePfp($pfp: String!) {
+  changePfp(pfp: $pfp)
+}

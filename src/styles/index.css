@@ -1,0 +1,254 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(237, 238, 240, 0.4);
+  overflow-y: hidden;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  padding-left: 20px;
+  padding-right: 0px;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  margin: 20px 0px;
+}
+
+.home_content {
+  margin-left: 40px;
+  padding-right: 40px;
+  width: 100%;
+  height: calc(100vh - 80px);
+  overflow-y: auto;
+}
+
+.card {
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 4px 4px 4px 0px rgba(34, 60, 80, 0.2);
+  margin-bottom: 20px;
+}
+
+.card_header {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  align-items: center;
+  cursor: pointer;
+  width: max-content;
+}
+
+.card_pfp {
+  margin-right: 15px;
+}
+
+.card_username {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.card_timestamp {
+  font-size: 12px;
+  font-weight: 200;
+}
+
+.card_main {
+  margin-top: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.card_body {
+  font-size: 16px;
+}
+
+.card_footer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.card_likes {
+  background-color: rgba(237, 238, 240, 0.6);
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.heart {
+  margin-right: 10px;
+}
+
+input[type="file"]#post {
+  opacity: 0;
+  border-radius: 100%;
+  cursor: pointer;
+  z-index: 99999;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+input[type="file"]#my {
+  border-radius: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 99999;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.create_attachment {
+  position: relative;
+  width: max-content;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.feed_create {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 20px;
+  margin-bottom: 40px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px 0px rgba(34, 60, 80, 0.2);
+}
+
+.create_pfp {
+  margin-right: 10px;
+}
+
+.create_form {
+  margin: 0 10px;
+}
+
+.create_attachment {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.create_btn {
+  padding: 3px 10px;
+  background-color: cyan;
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.image img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  user-select: none;
+}
+
+.friend_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 0px rgba(34, 60, 80, 0.2);
+  margin-bottom: 40px;
+}
+
+.fr_header_item {
+  background-color: transparent;
+  padding: 10px;
+  font-size: 18px;
+  flex: 1;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.user_card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.user_card:hover {
+  transition: background-color 150ms linear;
+  background-color: rgba(0, 206, 209, 0.1);
+}
+
+.user_pfp {
+  margin-right: 20px;
+}
+
+.user_response {
+  margin-left: auto;
+  padding: 3px 10px;
+  background-color: cyan;
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.my_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.my_pfp {
+  position: relative;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.edit_btn {
+  margin-left: auto;
+}
+
+.edit_btn {
+  padding: 3px 10px;
+  background-color: cyan;
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.save_edit {
+  padding: 3px 10px;
+  background-color: cyan;
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}

@@ -1,0 +1,22 @@
+.side_main {
+  width: 200px;
+  height: 100%;
+}
+
+.menu_item {
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.menu_item:hover {
+  transition: background-color 150ms linear;
+  background-color: rgba(0, 206, 209, 0.1);
+}
+
+.icon {
+  margin-right: 10px;
+}

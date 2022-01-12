@@ -1,0 +1,9 @@
+query GetOutgoingRequests {
+  getOutgoingRequests {
+    recipient {
+      id
+      username
+      profilePicture
+    }
+  }
+}

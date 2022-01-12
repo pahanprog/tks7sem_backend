@@ -1,0 +1,11 @@
+query GetIncomingRequests {
+  getIncomingRequests {
+    id
+    sender {
+      id
+      username
+      email
+      profilePicture
+    }
+  }
+}
